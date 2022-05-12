@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 100vw;
+    background-color: hsl(185, 75%, 39%);
+    color: hsl(0, 0%, 59%);
+    font-family: "Kumbh Sans";
+    background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0px -450px, 950px 450px;
+}
+#card{
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+#imgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+.bgStyle{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.avatar{
+    position: relative;
+    bottom: 3em;
+    border-radius: 50%;
+    border: 5px solid white;
+    background-color: white;
+}
+#cardHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+#cardHeader div{
+    display: flex;
+    align-items: center;
+}
+#cardHeader div p{
+    font-size: 1.2rem;
+    margin-left: 1rem;
+}
+.city{
+    margin-top: 1rem;
+}
+h1{
+    font-size: 1.2rem;
+    color: hsl(229, 23%, 23%);
+}
+#stats{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 59%);
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding-top: 1rem;
+}
+#stats div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.statsNumber{
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.statsText{
+    font-size: .8rem;
+}
+@media only screen and (max-width: 428px) {
+    body{
+        background-position: -720px -600px , 150px 350px;
+        
+    }
+}
